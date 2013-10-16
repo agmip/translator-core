@@ -2,6 +2,7 @@ package org.agmip.ace.translators.io;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 
 import org.agmip.ace.AceBaseComponentType;
 import org.agmip.ace.AceDataset;
@@ -20,6 +21,8 @@ public interface TranslatorOutput {
      * @param  outputDirectory the directory to ouput the translated files.
      * @param  dataset         the source ACE Dataset
      * @param  ...             subcomponents to translate
+     * 
+     * @return the list of generated files
      */
-    public void write(File outputDirectory, AceDataset dataset, AceBaseComponentType... components) throws IOException;
+    public List<File> write(File outputDirectory, AceDataset dataset, AceBaseComponentType... components) throws IOException;
 }
