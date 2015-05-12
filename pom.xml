@@ -22,4 +22,11 @@
                 <version>2.0.0</version>
   	</dependency>
   </dependencies>
+
+    <scm>
+        <connection>scm:git:git://github.com/agmip/translator-core.git</connection>
+        <developerConnection>scm:git:git@github.com:agmip/translator-core.git</developerConnection>
+        <url>https://github.com/agmip/translator-core</url>
+      <tag>HEAD</tag>
+    </scm>
 </project>
